@@ -13,6 +13,13 @@ namespace APIsAndJSON
                 RonVSKanyeAPI.RonSwansonQuote();
                 Console.WriteLine();
             }
+
+            for (int i = 0; i < 5; i++)
+            {
+                RonVSKanyeAPI.RonSwansonQuote();
+                RonVSKanyeAPI.KanyeWestQuote();
+                Console.WriteLine();
+            }
         }
     }
 }

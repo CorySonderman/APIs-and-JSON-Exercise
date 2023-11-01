@@ -9,7 +9,24 @@ namespace APIsAndJSON
         static void Main(string[] args)
 
         {
-            // KanyeVSRon
+            for (int i = 0; i < 5; i++)
+            {
+                
+                RonVSKanyeAPI.KanyeWestQuote();
+                RonVSKanyeAPI.RonSwansonQuote();
+                Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
+                Console.WriteLine();
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                
+                RonVSKanyeAPI.RonSwansonQuote();
+                RonVSKanyeAPI.KanyeWestQuote();
+                Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
+                Console.WriteLine();
+            }
+            //KanyeVSRon
             //for (int i = 0; i < 5; i++)
             //{
             //    RonVSKanyeAPI.KanyeWestQuote();

@@ -29,8 +29,11 @@ namespace APIsAndJSON
                 for (int i = 0; i < 3; i++)
                 {
                     TypeOutText(() => RonVSKanyeAPI.KanyeWestQuote(), typingSpeed);
+                    Thread.Sleep(2000);
                     TypeOutText(() => RonVSKanyeAPI.RonSwansonQuote(), typingSpeed);
+                    Thread.Sleep(2000);
                     TypeOutText(() => MyQuotes.GetRandomQuote("Cory"), typingSpeed);
+                    Thread.Sleep(2000);
                     Console.WriteLine();
                    
                 }

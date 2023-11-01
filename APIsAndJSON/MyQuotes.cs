@@ -21,12 +21,12 @@ namespace APIsAndJSON
 
         private static Random random = new Random();
 
-        public static string GetRandomQuote(string Cory)
+        public static string GetRandomQuote()
         {
             int index = random.Next(quotes.Count);
             string quote = quotes[index];
             Console.ForegroundColor = ConsoleColor.White;
-            return $"{Cory}: {quote}";
+            return $"Cory: {quote}";
         }
     }
 }

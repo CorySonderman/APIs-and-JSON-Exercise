@@ -32,7 +32,7 @@ namespace APIsAndJSON
                     Thread.Sleep(2000);
                     TypeOutText(() => RonVSKanyeAPI.RonSwansonQuote(), typingSpeed);
                     Thread.Sleep(2000);
-                    TypeOutText(() => MyQuotes.GetRandomQuote("Cory"), typingSpeed);
+                    TypeOutText(() => MyQuotes.GetRandomQuote(), typingSpeed);
                     Thread.Sleep(2000);
                     Console.WriteLine();
                    
@@ -42,7 +42,7 @@ namespace APIsAndJSON
                 {
                     TypeOutText(() => RonVSKanyeAPI.RonSwansonQuote(), typingSpeed);
                     TypeOutText(() => RonVSKanyeAPI.KanyeWestQuote(), typingSpeed);
-                    TypeOutText(() => MyQuotes.GetRandomQuote("Cory"), typingSpeed);
+                    TypeOutText(() => MyQuotes.GetRandomQuote(), typingSpeed);
                     Console.WriteLine();
                     
                 }

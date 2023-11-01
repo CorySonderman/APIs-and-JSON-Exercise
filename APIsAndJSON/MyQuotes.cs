@@ -25,6 +25,7 @@ namespace APIsAndJSON
         {
             int index = random.Next(quotes.Count);
             string quote = quotes[index];
+            Console.ForegroundColor = ConsoleColor.White;
             return $"{Cory}: {quote}";
         }
     }

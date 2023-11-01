@@ -9,37 +9,62 @@ namespace APIsAndJSON
         static void Main(string[] args)
 
         {
-            for (int i = 0; i < 5; i++)
+            //RonVSKanyeVSMe
+            //__________________________________________
+
             {
-                
-                RonVSKanyeAPI.KanyeWestQuote();
-                RonVSKanyeAPI.RonSwansonQuote();
-                Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
-                Console.WriteLine();
+                // Code to create typing effect
+                int typingSpeed = 25; 
+
+                static void TypeOutText(Func<string> textFunction, int speed)
+                {
+                    string text = textFunction();
+                    foreach (char c in text)
+                    {
+                        Console.Write(c);
+                        Thread.Sleep(speed);
+                    }
+                    Console.WriteLine();
+                }
+                for (int i = 0; i < 3; i++)
+                {
+                    TypeOutText(() => RonVSKanyeAPI.KanyeWestQuote(), typingSpeed);
+                    TypeOutText(() => RonVSKanyeAPI.RonSwansonQuote(), typingSpeed);
+                    TypeOutText(() => MyQuotes.GetRandomQuote("Cory"), typingSpeed);
+                    Console.WriteLine();
+                   
+                }
+
+                for (int i = 0; i < 3; i++)
+                {
+                    TypeOutText(() => RonVSKanyeAPI.RonSwansonQuote(), typingSpeed);
+                    TypeOutText(() => RonVSKanyeAPI.KanyeWestQuote(), typingSpeed);
+                    TypeOutText(() => MyQuotes.GetRandomQuote("Cory"), typingSpeed);
+                    Console.WriteLine();
+                    
+                }
             }
 
-            for (int i = 0; i < 5; i++)
-            {
-                
-                RonVSKanyeAPI.RonSwansonQuote();
-                RonVSKanyeAPI.KanyeWestQuote();
-                Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
-                Console.WriteLine();
-            }
-            //KanyeVSRon
+     
+
             //for (int i = 0; i < 5; i++)
             //{
+
             //    RonVSKanyeAPI.KanyeWestQuote();
             //    RonVSKanyeAPI.RonSwansonQuote();
+            //    Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
             //    Console.WriteLine();
             //}
 
             //for (int i = 0; i < 5; i++)
             //{
+
             //    RonVSKanyeAPI.RonSwansonQuote();
             //    RonVSKanyeAPI.KanyeWestQuote();
+            //    Console.WriteLine(MyQuotes.GetRandomQuote("Cory"));
             //    Console.WriteLine();
             //}
+
             //_______________________________________________
 
             //Weather Map
